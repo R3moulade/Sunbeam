@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Rent a car | Sunbeam Cars Inc.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar-navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#"><img id="navbar-logo" src="images/sunbeam-logo.png" alt="Sunbeam Logo"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="hero-image">
+    <div id="hero-text-box">
+        <div id="content-box">
+            <h2>Find the car that suits you</h2>
+                    </head>
+                    <body>
+                      <!--FORM-->
+                    <form id="form"> 
+                      <div class="selection_group">
+                      <label for="pick_up">Arrival</label>
+                      <input type="date" name="pick_up" id="arrivalfield" placeholder="dd.mm.åååå" required>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="selection_group">
+                          <label for="hand_in">Departure</label>
+                          <input type="date" name="hand-in" id="departurefield" placeholder="dd.mm.åååå" required>
+                      </div>
+                      <br>
+                      <br>
+                      <!-- JAVASCRIPT -->
+                      <div class="selection_group">
+                          <label for="nop">Number of people</label>
+                          <input type="number" name="nop" id="numberofpeople" class="ilist" min="1" max="7" required>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="selection_group">
+                          <label for="nos">Number of suitcases</label>
+                          <select class="ilist" name="nos" id="numberofsuitcases">
+                          <option value="0">0 - only a bag</option>
+                          <option value="1">1 suitcase</option>
+                          <option value="2">2 suitcases</option>
+                          <option value="3">3 suitcases</option>
+                          <option value="4">4 suitcases</option>
+                          <option value="5">5 suitcases</option>
+                          </select>
+                      </div>
+                      <button type="submit">Search</button>
+                      </form>
+                </div>
+    </div>
+</div>
+<!-- CAR ROWS -->
+<section id="booking-rows" class="body-width">
+<table  id="budget" class="booking-examples">
+  <tr>
+    <td><img src="images/car.png" class="cars"  alt="Image of a Suzuki Swift car"></td>
+    <td><h2>Suzuki Swift</h2></td>
+    <td>Category: Budget</td>
+    <br>
+    <td>Persons: <p type="number" name="persons" value="3">3<br></td>
+    <br>
+    <td>Suitcases: <p type="number" name="suitcases" value="0">0<br></td>
+    <td><h2>DKK850,00</h2><button class="booknow">Book now</button></td>
+  </tr>
+</table>
+  <br>
+<table id="standard" class="booking-examples">
+  <tr>
+    <td><img src="images/car2.png" class="cars"  alt="Image of a Mazda 3 car"></td>
+    <td><h2>Mazda 3</h2></td>
+    <td>Category: Standard</td>
+    <br>
+    <td>Persons: <p type="number" name="persons" value="5">5<br></td>
+    <br>
+    <td>Suitcases: <p type="number" name="suitcases" value="2">2<br></td>
+    <td><h2>DKK1170,00</h2><button class="booknow">Book now</button></td>
+  </tr>
+</table>
+<br>
+<table id="minivan" class="booking-examples">
+  <tr>
+    <td><img src="images/kachow.png" class="cars"  alt="Image of Lightning McQueen"></td>
+    <td><h2>Lightning McQueen</h2></td>
+    <td>Category: Minivan</td>
+    <br>
+    <td>Persons: <p type="number" name="persons" value="6">6<br></td>
+    <br>
+    <td>Suitcases: <p type="number" name="suitcases"  value="4">4<br></td>
+    <td><h2>DKK42.069,00</h2><button class="booknow">Book now</button></td>
+  </tr>
+</table>
+</section>
+<script src="javascript.js"></script>
+<!--
+<div class="container">    
+  <div class="row">
+    <div class="col">
+        <img src="images/car.png" class="cars"  alt="Image">
+       <h2>Suzuki Swift</h2>
+      </div>
+      <div class="col">
+        
+       <h2>Suzuki Swift</h2>
+      </div>
+      <div class="col">
+        
+       <h2>Suzuki Swift</h2>
+      </div>
+      <div class="col">
+        <img src="images/car2.png" class="cars"  alt="Image">
+       <h2>Mazda 3</h2>
+       </div>
+      <div class="col">
+        <img src="images/car.png" class="cars"  alt="Image">
+       <h2>Suzuki Swift</h2>
+       </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div><br>
+-->
+</body>
+</html>

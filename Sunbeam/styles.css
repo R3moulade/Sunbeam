@@ -1,0 +1,64 @@
+.body-width {
+  width: 80%;
+  margin: auto;
+}
+/* Remove the navbar's default margin-bottom and rounded borders */ 
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+  }
+  .navbar-navbar-inverse {
+    background-color: blue;
+}
+#navbar-logo {
+    width: 100px;
+}
+#arrivalfield {
+  opacity: 100%;
+}
+  /* Add a gray background color and some padding to the footer */
+  footer {
+    background-color: #f2f2f2;
+    padding: 25px;
+  }
+
+#hero-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    background-image: url(images/hero-image.png);
+    margin: 30px 50px;
+}
+#hero-text-box {
+    width: 350px;
+    height: 350px;
+    background-color: white;
+    opacity: 85%;
+    position: relative;
+    left: 150px;
+    top: 80px;
+
+}
+#content-box
+{
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+.cars {
+  width: 20vw;
+}
+.booking-examples {
+  background-color: burlywood;
+  
+}
+td {
+  padding: 10px 20px;
+  margin: auto;
+}
+.booknow {
+  width: 10vw;
+}
+@media only screen and (max-width: 768px) {
+
+}
